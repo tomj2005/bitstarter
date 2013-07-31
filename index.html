@@ -25,34 +25,82 @@
         .linediv-r {
           border-left: 1px white solid;
         }
-      }
-/*          padding-top: 20px;
-          padding-bottom: 40px;
-*/
+			}
       
-      .container {
-        width: 960px;
-      }
+			/* Landscape phones and down */
+			@media (max-width: 480px) {
+				.copy {
+					padding: 2.5% 10%;
+				}
+				.linediv-l {
+					border-bottom: 1px white solid;
+				}
+				.linediv-r {
+					border-top: 1px white solid;
+				}
+			}
+
+			/* All form factors */
+
+			/* Main body and headings */
+			body {
+				font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+			}
+			.heading, .subheading {
+				font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+				text-align: center;
+			}
+      
       p.lead {
-        padding-top: 15px;
+        padding-top: 1.5%;
+				font-size: 24px;
+				line-height: 30px;
       }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
-      }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
+			p {
+				font-size: 18px;
+				line-height: 24px;
+			}
+
+			/* Video pitch and Action */
+			.pitch {
+				padding: 2.5% 0%;
+			}
+			.order {
+				padding: 2% 0%;
+			}
+			.actions {
+				background-color: #343434;
+				padding: 3% 0%;
+			}
+      .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
-      .video {
-        /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-        height: 124px;
-        line-height: 124px;
-      }
-      div.row {
-        border: 1px solid;
-      }
+			.statistics h3, .statistics p {
+				color: white;
+			}
+
+			/* Marketing Copy and Footer */
+			.copy {
+				padding-top: 2.5%;
+				padding-bottom: 2.5%;
+				text-align: justify;
+			}
+			.asset {
+				padding: 2.5% 0%;
+			}
+			.footer {
+				color: #cccccc;
+				text-align: center;
+			}
+			.footer p {
+				font-size: 11px;
+			}
+			.footer a {
+				color: #ccccff;
+			}
     </style>
   </head>
+
   <body>
 		<!-- Mobile-friendly navbar adpated from example. -->
 		<!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
@@ -71,18 +119,6 @@
 							<li><a href="#about">About</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
-					</div>
-
-					<div class="row navigation">
-						<div class="span2 logo">
-		          <a href="">Logo</a>
-		        </div>
-		        <div class="span6 blank">
-		          Blank
-		        </div>
-		        <div class="span4 about">
-		          <a href="#">About</a>
-		        </div>
 					</div>
 
 				</div>
